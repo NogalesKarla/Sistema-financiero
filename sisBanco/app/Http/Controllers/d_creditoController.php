@@ -14,7 +14,7 @@ class d_creditoController extends Controller
     public function index()
     {
         //
-        $creditos = DB::table('d_credito')->get();
+        $creditos = DB::table('credito')->get();
         $clientes = DB::table('persona')->get();
         $creditos2= DB::table('t_credito')->get();
         return view('creditos.index',compact('creditos'),compact('clientes'),compact('creditos2'));
@@ -43,7 +43,7 @@ class d_creditoController extends Controller
     {
         //
 
-        DB::table('d_credito')->insert([
+        DB::table('credito')->insert([
             "id_t_cre"=>$request->input('id_t_cre'),
             "moneda"=>$request->input('moneda'),
             "fecha"=>$request->input('fecha'),

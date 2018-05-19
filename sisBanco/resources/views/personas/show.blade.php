@@ -102,6 +102,7 @@
         </div>
 
     </div>
+    <!--
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
@@ -114,7 +115,7 @@
             </div>
             <tr>
                 <td>
-                    <!-- Modal -->
+                    
                     <div class="modal fade" id="opcionesApertura" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
@@ -182,37 +183,8 @@
                 </td>
             </tr>
         </div>
-    </div>
-    <table id="example" class="display" cellspacing="0" width="100%" >
-        <thead>
-        <tr>
-            <th>Nro Cuenta</th>
-            <th>Fecha de Apertura</th>
-            <th>Moneda</th>
-            <th>Tipo de cuenta</th>
-            <th>Estado</th>
-           <!-- <th width="280px">Action</th>-->
-        </tr>
-        </thead>
-        <tfoot>
-        </tfoot>
-        <tbody>
-            @foreach ($cuentas as $key => $cuenta)
-                <tr>
-                    <td>{{ $cuenta->nro_cuenta }}</td>
-                    <td>{{ $cuenta->fecha_apertura }}</td>
-                    <td>{{ $cuenta->moneda }}</td>
-                    <td>{{ $cuenta->tipo }}</td>
-                    <td>{{ $cuenta->estado }}</td>
-                
-                </tr>
-           
-            @endforeach
-        </tbody>
-
-
-        
-    </table>
+    </div>-->
+ 
 
     
     

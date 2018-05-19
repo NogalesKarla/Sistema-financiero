@@ -34,9 +34,9 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="{{ route('personas.index') }}"><i class="fa fa-circle-o"></i> R. Cliente</a></li>
-            <li class="active"><a href="{{ route('cuentas.index') }}"><i class="fa fa-circle-o"></i>Cuenta</a></li>
-            <li><a href="{{ route('d_credito.index') }}"><i class="fa fa-circle-o"></i>R. Credito</a></li>
-            <li><a href="{{ route('t_credito.index') }}"><i class="fa fa-circle-o"></i>R.Tipo de Credito</a></li>
+           <!--   <li class="active"><a href="{{ route('cuentas.index') }}"><i class="fa fa-circle-o"></i>Cuenta</a></li>
+          <li><a href="{{ route('d_credito.index') }}"><i class="fa fa-circle-o"></i>R. Credito</a></li>
+            <li><a href="{{ route('t_credito.index') }}"><i class="fa fa-circle-o"></i>R.Tipo de Credito</a></li>-->
           </ul>
         </li>
         

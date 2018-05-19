@@ -149,12 +149,12 @@ class PersonaController extends Controller
         ->where("cliente_natural.id",$id)->get();
         $rubro=Rubro::join("cliente_juridico","cliente_juridico.id_rubro","=","rubro.id")
         ->where("cliente_juridico.id",$id)->get();
-        $cuentas=DB::select("select cuenta.* from cuenta,detalle_cuenta where cuenta.nro_cuenta = detalle_cuenta.nro_cuenta
-         and detalle_cuenta.id_persona = ".$id);
+    /**    $cuentas=DB::select("select cuenta.* from cuenta,detalle_cuenta where cuenta.nro_cuenta = detalle_cuenta.nro_cuenta
+         and detalle_cuenta.id_persona = ".$id);**/
 
         
       // dd($cuentas);
-        return view('personas.show',compact('persona','natural','juridico','ocupacion','rubro','cuentas'));
+        return view('personas.show',compact('persona','natural','juridico','ocupacion','rubro'));
 
     }
      public function edit($id)
